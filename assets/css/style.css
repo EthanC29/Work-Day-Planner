@@ -4,15 +4,6 @@ body {
   line-height: 1;
 }
 
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -21,25 +12,61 @@ textarea{
   border-bottom: 10px solid black;
 }
 
-.description{
-  white-space: pre-wrap;
-}
-
 .time-block{
   text-align: center;
   border-radius: 15px;
+  margin-top: 50px;
 }
 
+/* bootstrap columns & rows */
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+  margin: 5px auto;
+}
+
+/* attributes of each cell */
+.col-10 {
+  background-color: var(--bs-red);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.col {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  height: 80px;
+}
+
+/* textbox */
+.inputTextBox{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	color: black;
+  font-weight: bold;
+	border: none;
+  padding-left: 10px;
+}
+
+.input-wrap{
+	padding: 0;
+	white-space: initial;
+}
+
+.listTextContent{
+	width: 100%;
+	height: 100%;
+}
+
+#currentDay, #currentTime {
+  font-weight: bolder;
+  color: rgb(200, 60, 60);
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
 }
 
 .past {
@@ -68,56 +95,4 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
-}
-
-/* start of personal code */
-
-#currentDay, #currentTime {
-  font-weight: bolder;
-  color: rgb(200, 60, 60);
-}
-
-.row-width {
-  width: 80%; 
-  margin: 5px auto;
-}
-
-.btn-space {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.btn-bounds {
-  padding: auto;
-  border-radius: 0 10px 10px 0;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.col-10 {
-  background-color: var(--bs-red);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.col {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  height: 80px;
-}
-
-.input-wrap{
-	padding: 0;
-	white-space: initial;
-}
-
-.inputTextBox{
-	width: 100%;
-	height: 100%;
-	background: var(--bs-red);
-	color: #fff;
-	border: none;
-}
-
-.listTextContent{
-	width: 100%;
-	height: 100%;
 }
