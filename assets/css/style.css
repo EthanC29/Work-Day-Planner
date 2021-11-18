@@ -91,8 +91,13 @@ textarea{
 .col-10 {
   background-color: var(--bs-red);
   border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 100%;
+  padding: 10px;
 }
+
 .col {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+  height: 100%;
 }
