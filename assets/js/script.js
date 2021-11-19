@@ -57,8 +57,6 @@ $(document).ready(function () {
 
     };
 
-    
-
     $('.loopHtml').append(loopHtml);
     
     // activate clickHandler on "save" button click

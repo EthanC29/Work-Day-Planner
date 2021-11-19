@@ -30,6 +30,7 @@ body {
 .col-10 {
   background-color: var(--bs-red);
   border: 1px solid rgba(0, 0, 0, 0.3);
+
 }
 
 .col {
@@ -95,4 +96,29 @@ body {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+/* media querys for smaller screen sizes */
+@media screen and (max-width: 992px) {
+  .col-10 {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-10 {
+    width: 66.66%;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .col-10 {
+    width: 58.33%;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .col-10 {
+    width: 50%;
+  }
 }
